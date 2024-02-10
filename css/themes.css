@@ -14,4 +14,7 @@
     --weight-bold: 700;
 
     --font-size: 18px;
+
+    --gradient: linear-gradient(to right, var(--color-lime-green), var(--color-bright-cyan));
+    width: 100%;
 }
