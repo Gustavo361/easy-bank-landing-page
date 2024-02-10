@@ -1,5 +1,5 @@
-const dataMobileMenuOpen =  document.querySelector('[data-mobile-menu-open]')
-const dataMobileMenuClose =  document.querySelector('[data-mobile-menu-close]')
+const dataMobileMenuOpen = document.querySelector('[data-mobile-menu-open]')
+const dataMobileMenuClose = document.querySelector('[data-mobile-menu-close]')
 const dataMenuContainer = document.querySelector('[data-menu-container]')
 
 dataMobileMenuOpen.addEventListener('click', () => {
@@ -11,5 +11,11 @@ dataMobileMenuOpen.addEventListener('click', () => {
 dataMobileMenuClose.addEventListener('click', () => {
     dataMenuContainer.classList.toggle('active')
     dataMobileMenuOpen.classList.add('active')
-    dataMobileMenuClose.classList.remove('active')    
+    dataMobileMenuClose.classList.remove('active')
 })
+
+//Testing connection to the server
+fetch('http://localhost:3000/')
+    .then(response => response.text())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error: ', error))

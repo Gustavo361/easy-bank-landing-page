@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/create-account.css">
+    <script defer src="js/login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <a href="index.html">Home</a>
+    <form data-create-account method="POST">
+        <!-- <label for="userName">Your name</label>
+        <input type="text" name="userName" id="userName" placeholder="Your Name" data-input-user-name>
+        <span>erro, nome inválido</span> -->
+        <label for="userEmail">Your email</label>
+        <input type="email" name="userEmail" id="userEmail" placeholder="example@email.com" data-input-user-email>
+        <span>erro, e-mail inválido</span>
+        <label for="userPassword">Password</label>
+        <input type="text" id="userPassword" name="userPassword" data-input-user-password>
+        <span>erro, senha inválida</span>
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>
