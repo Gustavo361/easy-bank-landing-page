@@ -29,7 +29,6 @@
 }
 
 html {
-    /* overflow-y: hidden */
     font-family: var(--font-family);
 }
 
@@ -68,7 +67,6 @@ nav [data-menu-container] {
     height: 90vh;
     display: none;
     justify-content: center;
-
     position: absolute;
     top: 100%;
     left: 0;
@@ -93,12 +91,23 @@ nav [data-menu-container] ul li {
     padding-top: 4.5%;
     padding-bottom: 4.5%;
     color: var(--grayish-blue);
-    /* font-weight: var(--weight-bold); */
     cursor: pointer;
 }
 
 nav #menu button {
     display: none;
+    background-color: transparent;
+    border: none;
+}
+
+nav #menu button img#icon-hamburger {
+    width: 28px;
+    height: 18px;
+}
+
+nav #menu button img#icon-close {
+    width: 20px;
+    height: 20px;
 }
 
 nav #menu button.active {
@@ -108,9 +117,7 @@ nav #menu button.active {
 header section#hero {
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
     background-color: #FAFAFA;
-    /* overflow-x: initial; */
     padding-bottom: 28%;
 }
 

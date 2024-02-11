@@ -7,17 +7,30 @@
 }
 
 body {
-    background-color: #F4F5F7
+    background-color: #F4F5F7;
 }
 
 h1 {
+    width: 100%;
+    display: block;
+    text-align: center;
     margin-top: 4%;
     color: var(--color-dark-blue);
 }
 
+p {
+    width: 90%;
+    display: block;
+    text-align: center;
+    color: var(--color-dark-blue);
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 form {
     margin: 0 auto;
-    margin-top: 7%;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -26,6 +39,7 @@ form {
 
 form label {
     margin-top: 2%;
+    margin-bottom: 0.5%;
     color: var(--color-dark-blue);
 }
 
