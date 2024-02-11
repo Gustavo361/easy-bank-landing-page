@@ -93,7 +93,7 @@ nav [data-menu-container] ul li {
     color: var(--grayish-blue);
     cursor: pointer;
 }
-
+  
 nav #menu button {
     display: none;
     background-color: transparent;
