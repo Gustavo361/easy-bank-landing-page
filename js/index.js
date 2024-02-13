@@ -15,7 +15,7 @@ dataMobileMenuClose.addEventListener('click', () => {
 })
 
 //Testing connection to the server
-fetch('http://localhost:3000/')
+fetch('https://easy-bank-server.onrender.com')
     .then(response => response.text())
     .then(data => console.log(data))
     .catch(error => console.error('Error: ', error))
