@@ -16,8 +16,10 @@ dataCreateAccount.addEventListener('submit', (e) => {
         userPassword: userPassword,
     };
 
-    fetch('https://easy-bank-server.onrender.com/create-account', {
+    fetch('https://easy-bank-f3jy.onrender.com/create-account', {
+    // fetch('http://localhost:3000/create-account', {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
             'Content-Type': 'application/json',
         },
@@ -25,19 +27,30 @@ dataCreateAccount.addEventListener('submit', (e) => {
     })
         .then(response => response.json())
         .then(data => {
-            console.log(data);
-            if (data.success) {
-                // Aqui você obtém a rota dinamicamente a partir da resposta do servidor
+            console.log(data)
+            if (data.ok) {
                 const dynamicRoute = data.redirectRoute || 'indexu.html';
-                
                 window.location.href = dynamicRoute;
                 console.log('Redirected successfully');
             } else {
-                window.alert(data.error);
+                if (data.validationErrors) {
+                    if (data.validationErrors.userName) {
+                        window.alert('Erro no nome: ' + data.validationErrors.userName);
+                    }
+                    if (data.validationErrors.userEmail) {
+                        window.alert('Erro no e-mail: ' + data.validationErrors.userEmail);
+                    }
+                    if (data.validationErrors.userPassword) {
+                        window.alert('Erro na senha: ' + data.validationErrors.userPassword);
+                    }
+                } else {
+                    window.alert(data.error);
+                }
             }
         })
         .catch(error => {
-            alert('preencha o formulário corretamente');
-            console.error('Error', error);
-        });
+            console.log(data)
+            alert('Preencha o formulário corretamente no front', error);
+            console.error('Error - Preencha o formulário corretamente no front', error);
+        })
 });

@@ -13,9 +13,3 @@ dataMobileMenuClose.addEventListener('click', () => {
     dataMobileMenuOpen.classList.add('active')
     dataMobileMenuClose.classList.remove('active')
 })
-
-//Testing connection to the server
-fetch('https://easy-bank-server.onrender.com')
-    .then(response => response.text())
-    .then(data => console.log(data))
-    .catch(error => console.error('Error: ', error))

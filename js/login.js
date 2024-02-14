@@ -14,7 +14,8 @@ dataCreateAccount.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await fetch('https://easy-bank-server.onrender.com/login', {
+        // const response = await fetch('https://easy-bank-server.onrender.com/login', {
+        const response = await fetch('http://localhost:3000/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
