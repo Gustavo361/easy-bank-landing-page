@@ -16,10 +16,9 @@ dataCreateAccount.addEventListener('submit', (e) => {
         userPassword: userPassword,
     };
 
-    fetch('https://easy-bank-f3jy.onrender.com/create-account', {
+    fetch('https://easy-bank-server.onrender.com/create-account', {
     // fetch('http://localhost:3000/create-account', {
         method: 'POST',
-        mode: 'no-cors',
         headers: {
             'Content-Type': 'application/json',
         },
