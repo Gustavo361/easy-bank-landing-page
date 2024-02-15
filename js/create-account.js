@@ -21,7 +21,9 @@ dataCreateAccount.addEventListener('submit', (e) => {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
+            // 'Origin': 'http://127.0.0.1:5500', // Adicione a origem do pedido
         },
+        mode: 'cors', // Habilita o modo CORS
         body: JSON.stringify(data),
     })
         .then(response => response.json())
