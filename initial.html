@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/minified/index.min.css">
     <link rel="stylesheet" type="text/css" href="css/minified/min-width_768px.min.css">
     <link rel="stylesheet" href="css/create-account.css">
-    <script defer src="js/login.js"></script>
     <script defer src="js/index.js"></script>
-    <title>Login</title>
+    <title>Página inicial logada</title>
 </head>
 <body>
     <header>
@@ -52,22 +46,10 @@
             <button class="req-invt"><a href="login.html">Login</a></button>
         </nav>
     </header>
-    <h1>Login</h1>
-    <a href="index.html">Home</a>
-    <p>Welcome back! Sign in to your account to access your personalized banking experience.</p>
-    <form data-login-account method="POST">
-        <label for="userEmail">Your email</label>
-        <input type="email" name="userEmail" id="userEmail" placeholder="example@email.com" data-input-user-email>
-        <span>erro, e-mail inválido</span>
-        <label for="userPassword">Password</label>
-        <input type="password" id="userPassword" name="userPassword" data-input-user-password placeholder="••••••••">
-        <span>erro, senha inválida</span>
-        <button type="submit">Entrar</button>
+    <h1>Página inicial logada</h1>
+    <form action="http://localhost:3000/logout" method="GET">
+        <button type="submit">Logout</button>
     </form>
-    <div>
-        <span>Não tem uma conta? Clique <a href="create-account.html">aqui</a>.</span>
-    </div>
-
     <footer>
         <article id="footer-first">
             <section id="footer-upper">
