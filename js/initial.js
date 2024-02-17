@@ -1,5 +1,5 @@
 document.getElementById('logoutButton').addEventListener('click', () => {
-    fetch('https://easy-bank-ui.onrender.com/logout')
+    fetch('https://easy-bank-server.onrender.com/logout')
     // fetch('https:localhost:3000/logout')
     .then(response => {
         if (!response.ok) {
