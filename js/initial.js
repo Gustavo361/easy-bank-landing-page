@@ -1,15 +1,18 @@
-const dataUserName = document.querySelector('[data-user-name]')
-
-document.addEventListener('DOMContentLoaded', (e) => {
-    fetch('/initial', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
+document.getElementById('logoutButton').addEventListener('click', () => {
+    fetch('https://easy-bank-ui.onrender.com/logout', {
+        method: 'GET',
     })
-        .then(response => response.json())
-        .then(data => {
-            dataUserName.innerText = data.userName
-        })
-        .catch(error => console.error('Erro ao buscar dados do usuário:', error))
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Erro ao fazer logout.');
+        }
+        return response.json()
+    })
+    .then(data => {
+        console.log(data.message)
+        window.location.href = data.redirectRoute
+    })
+    .catch(error => {
+        console.error('Erro durante a solicitação de logout:', error);
+    })
 })
