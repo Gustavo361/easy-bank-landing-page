@@ -1,17 +1,18 @@
-document.getElementById('logoutButton').addEventListener('click', () => {
-    fetch('https://easy-bank-server.onrender.com/logout')
-    // fetch('https:localhost:3000/logout')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Erro ao fazer logout.');
-        }
-        return response.json()
+document.getElementById('logoutButton').addEventListener('click', function() {
+    fetch('https://easy-bank-server.onrender.com/logout', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
     })
-    .then(data => {
-        console.log(data.message)
-        window.location.href = data.redirectRoute 
+    .then(response => {
+        if (response.ok) {
+            window.location.href = 'https://easy-bank-ui.onrender.com';
+        } else {
+            console.error('Erro ao fazer logout');
+        }
     })
     .catch(error => {
-        console.error('Erro durante a solicitação de logout:', error);
-    })
-})
+        console.error('Erro ao fazer logout', error);
+    });
+});
