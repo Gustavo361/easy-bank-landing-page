@@ -1,6 +1,6 @@
 document.getElementById('logoutButton').addEventListener('click', function() {
     fetch('https://easy-bank-server.onrender.com/logout', {
-        method: 'GET',
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
