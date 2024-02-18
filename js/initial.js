@@ -7,7 +7,8 @@ document.getElementById('logoutButton').addEventListener('click', function() {
     })
     .then(response => {
         if (response.ok) {
-            window.location.href = 'https://easy-bank-ui.onrender.com';
+            // window.location.href = 'https://easy-bank-ui.onrender.com'
+            console.log(response.ok)
         } else {
             console.error('Erro ao fazer logout');
         }
