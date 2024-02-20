@@ -96,7 +96,7 @@ nav [data-menu-container] ul li {
 
 nav [data-menu-container] ul li a {
     color: hsl(233, 8%, 62%);
- }
+}
 
 nav #menu button {
     display: none;

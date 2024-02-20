@@ -17,7 +17,7 @@ h1 {
     margin-top: 4%;
     color: var(--color-dark-blue);
 }
- 
+
 p {
     width: 90%;
     display: block;
@@ -93,6 +93,7 @@ div span a {
     text-decoration: none;
     color: #3498db;
 }
+
 div span a:hover {
     color: #3498db
 }
