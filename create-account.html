@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/minified/index.min.css">
-    <link rel="stylesheet" type="text/css" href="css/minified/min-width_768px.min.css">
+    <link rel="stylesheet" type="text/css" href="css/min-width_768px.css">
     <link rel="stylesheet" href="css/create-account.css">
     <script defer src="js/create-account.js"></script>
     <script defer src="js/index.js"></script>
@@ -17,20 +16,21 @@
     <header>
         <nav>
             <div id="brand-title" style="padding-top: 1%;">
-                <img src="images/logo.svg" alt="Website Logo">
+                <a href="index.html"><img src="images/logo.svg" alt="Website Logo"></a>
             </div>
             <div id="menu">
                 <button data-mobile-menu-open class="active">
                     <img src="images/mobile/icon-hamburger.svg" alt="Open mobile menu">
                 </button>
                 <button data-mobile-menu-close>
-                    <img src="images/mobile/icon-close.svg" style="" alt="Close mobile menu">
+                    <img src="images/mobile/icon-close.svg" alt="Close mobile menu">
                 </button>
             </div>
             <div id="menu-container" data-menu-container>
                 <ul>
                     <li>
-                        <span class="under-bar"><a href="index.html">Home</a></span>
+                        <a href="index.html">Home</a>
+                        <span class="under-bar"></span>
                     </li>
                     <li>About
                         <span class="under-bar"></span>
@@ -50,7 +50,6 @@
         </nav>
     </header>
     <h1>Create account</h1>
-    <a href="index.html">Home</a>
     <p>Join us to unlock the best in banking. Experience seamless transactions, robust security, and personalized financial services tailored to you.</p>
     <form data-create-account method="POST">
         <label for="userName">Your name:</label>

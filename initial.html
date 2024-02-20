@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/minified/index.min.css">
-    <link rel="stylesheet" type="text/css" href="css/minified/min-width_768px.min.css">
-    <link rel="stylesheet" href="css/create-account.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/min-width_768px.css">
+    <link rel="stylesheet" type="text/css" href="css/create-account.css">
     <script defer src="js/index.js"></script>
     <script defer src="js/initial.js"></script>
     <title>Página inicial logada</title>
@@ -17,7 +17,7 @@
     <header>
         <nav>
             <div id="brand-title" style="padding-top: 1%;">
-                <img src="images/logo.svg" alt="Website Logo">
+                <a href="index.html"><img src="images/logo.svg" alt="Website Logo"></a>
             </div>
             <div id="menu">
                 <button data-mobile-menu-open class="active">
@@ -51,8 +51,8 @@
     </header>
     <h1>Página inicial logada</h1>
     <h2>Bem-vindo de volta, <span data-user-name></span>!</h2>
-    <!-- <form action="https://easy-bank-server.onrender.com/logout" method="get"> -->
-    <form action="http://localhost:3000/logout" method="get">
+    <form action="https://easy-bank-server.onrender.com/logout" method="get">
+    <!-- <form action="http://localhost:3000/logout" method="get"> -->
         <button type="submit">log out</button>
     </form>
     <footer>

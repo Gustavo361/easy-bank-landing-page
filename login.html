@@ -9,8 +9,7 @@
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/minified/index.min.css">
-    <link rel="stylesheet" type="text/css" href="css/minified/min-width_768px.min.css">
+    <link rel="stylesheet" type="text/css" href="css/min-width_768px.css">
     <link rel="stylesheet" href="css/create-account.css">
     <script defer src="js/login.js"></script>
     <script defer src="js/index.js"></script>
@@ -20,7 +19,7 @@
     <header>
         <nav>
             <div id="brand-title" style="padding-top: 1%;">
-                <img src="images/logo.svg" alt="Website Logo">
+                <a href="index.html"><img src="images/logo.svg" alt="Website Logo"></a>
             </div>
             <div id="menu">
                 <button data-mobile-menu-open class="active">
@@ -33,7 +32,8 @@
             <div id="menu-container" data-menu-container>
                 <ul>
                     <li>
-                        <span class="under-bar"><a href="index.html">Home</a></span>
+                        <a href="index.html">Home</a>
+                        <span class="under-bar"></span>
                     </li>
                     <li>About
                         <span class="under-bar"></span>
@@ -49,11 +49,10 @@
                     </li>
                 </ul>
             </div>
-            <button class="req-invt"><a href="login.html">Login</a></button>
+            <button class="req-invt"><a href="create-account.html">Create Account</a></button>
         </nav>
     </header>
     <h1>Login</h1>
-    <a href="index.html">Home</a>
     <p>Welcome back! Sign in to your account to access your personalized banking experience.</p>
     <form data-login-account method="POST">
         <label for="userEmail">Your email</label>
