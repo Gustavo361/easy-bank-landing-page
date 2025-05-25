@@ -19,6 +19,7 @@ dataCreateAccount.addEventListener('submit', (e) => {
     fetch('https://easy-bank-server.onrender.com/create-account', {
     // fetch('http://localhost:3000/create-account', {
         method: 'POST',
+        credentials: 'include',
         headers: {
             'Content-Type': 'application/json',
         },
