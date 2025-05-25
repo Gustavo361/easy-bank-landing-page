@@ -28,6 +28,7 @@ dataCreateAccount.addEventListener('submit', (e) => {
         .then(data => {
             console.log(data)
             if (data.ok) {
+                localStorage.removeItem('userName')
                 localStorage.setItem('userName', data.userName)
                 const dynamicRoute = data.redirectRoute
                 window.location.href = dynamicRoute
