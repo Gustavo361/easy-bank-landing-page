@@ -22,17 +22,19 @@ dataLoginAccount.addEventListener('submit', async (e) => {
     })
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            console.log(data)
             if (!data.ok) {
-                window.alert('Usuário não encontrado.');
+                window.alert('Usuário não encontrado.')
             } else {
-                const dynamicRoute = data.redirectRoute || 'initial.html';
-                window.location.href = dynamicRoute;
-                console.log('Redirected successfully');
+                localStorage.removeItem('userName')
+                localStorage.setItem('userName', data.userName)
+                const dynamicRoute = data.redirectRoute || 'initial.html'
+                window.location.href = dynamicRoute
+                console.log('Redirected successfully')
             }
         })
         .catch(error => {
-            console.error('Error:', error);
-            alert('Ocorreu um erro ao fazer login.');
-        });
+            console.error('Error:', error)
+            alert('Ocorreu um erro ao fazer login.')
+        })
 })
