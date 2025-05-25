@@ -403,3 +403,9 @@ section#footer-lower button.req-invt a {
 button#logoutButton {
     padding: 5px;
 }
+
+button#logoutButtonFooter {
+    padding: 7px;
+    background-color: red;
+    display: initial;
+}
