@@ -181,13 +181,6 @@ header section#hero div#hero-content button.req-invt a {
     color: white;
 }
 
-h2 {
-    padding-top: 1%;
-    padding-left: 12%;
-    padding-bottom: 1%;
-    font-size: 16px;
-}
-
 section#y-choose {
     display: flex;
     flex-direction: column;
@@ -407,16 +400,6 @@ section#footer-lower button.req-invt a {
     color: white;
 }
 
-    button#logoutButton {
-        width: 30%;
-        border: none;
-        border-radius: 22px;
-        background: linear-gradient(to right, var(--color-lime-green), var(--color-bright-cyan));
-        font-weight: var(--weight-bold);
-        color: white;
-        cursor: pointer;
-        display: block;
-        margin: 0 auto;
-        padding: 5px;
-        max-width: 200px;
-    }
+button#logoutButton {
+    padding: 5px;
+}
