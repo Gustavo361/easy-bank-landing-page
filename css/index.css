@@ -406,3 +406,17 @@ section#footer-lower button.req-invt a {
     text-decoration: none;
     color: white;
 }
+
+    button#logoutButton {
+        width: 30%;
+        border: none;
+        border-radius: 22px;
+        background: linear-gradient(to right, var(--color-lime-green), var(--color-bright-cyan));
+        font-weight: var(--weight-bold);
+        color: white;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+        max-width: 200px;
+    }
